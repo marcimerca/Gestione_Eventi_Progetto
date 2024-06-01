@@ -20,7 +20,6 @@ public class Evento {
     private LocalDate data;
     private String luogo;
     private int numPostiDisponibili;
-    private int numPostiMax;
 
     @OneToMany(mappedBy = "evento")
     @JsonIgnore
