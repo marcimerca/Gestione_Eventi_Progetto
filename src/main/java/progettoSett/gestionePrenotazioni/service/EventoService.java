@@ -22,7 +22,6 @@ public class EventoService {
         evento.setData(eventoDto.getData());
         evento.setLuogo(eventoDto.getLuogo());
         evento.setNumPostiDisponibili(eventoDto.getNumPostiDisponibili());
-        evento.setNumPostiMax(eventoDto.getNumPostiMax());
         eventoRepository.save(evento);
         return "Evento con titolo " + eventoDto.getTitolo() + " inserito correttamente";
     }
@@ -43,7 +42,6 @@ public class EventoService {
             evento.setDescrizione(eventoDto.getDescrizione());
             evento.setData(eventoDto.getData());
             evento.setNumPostiDisponibili(eventoDto.getNumPostiDisponibili());
-            evento.setNumPostiMax(eventoDto.getNumPostiMax());
             eventoRepository.save(evento);
             return evento;
         } else {
